@@ -15,6 +15,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter endeavoru enrc2b,$(TARGET_DEVICE)),)
+ifneq ($(filter endeavoru enrc2b evitareul,$(TARGET_DEVICE)),)
     include $(call first-makefiles-under,$(LOCAL_PATH))
 endif
