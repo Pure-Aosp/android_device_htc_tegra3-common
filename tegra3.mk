@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     $(LOCAL_PATH)/prebuilt/usr/keylayout/tegra-kbc.kl:system/usr/keylayout/tegra-kbc.kl
 
+PRODUCT_COPY_FILES += \
+		$(LOCAL_PATH)/prebuilt/lib/hw/camera.tegra.so:system/lib/hw/camera.tegra.so \
+		$(LOCAL_PATH)/prebuilt/lib/libskia.so:system/lib/libskia.so
+
 # Common ramdisk files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.tegra3-common.rc:root/init.tegra3-common.rc
@@ -93,10 +97,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.tegra
-
-# Camera wrapper
-PRODUCT_PACKAGES += \
-    camera.tegra
 
 PRODUCT_PACKAGES += \
     hostapd_cli
@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
-
 
 # NFC packages
 PRODUCT_PACKAGES += \

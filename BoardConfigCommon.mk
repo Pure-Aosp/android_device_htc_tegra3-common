@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
 # Board
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
@@ -79,7 +82,7 @@ BOARD_HAS_SDCARD_INTERNAL := true
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
 
 # NvCamera extensions
-TARGET_SPECIFIC_HEADER_PATH := device/htc/tegra3-common/include
+#TARGET_SPECIFIC_HEADER_PATH := device/htc/tegra3-common/include
 
 # Hardware tunables
 BOARD_HARDWARE_CLASS := device/htc/tegra3-common/cmhw/
