@@ -18,7 +18,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 DEVICE_PACKAGE_OVERLAYS += device/htc/tegra3-common/overlay
 
 # Common ramdisk files
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/init.tegra3-common.rc:root/init.tegra3-common.rc
 
 # These are the hardware-specific features
@@ -97,7 +97,7 @@ PRODUCT_PACKAGES += \
     lights.tegra
 
 # Camera wrapper
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     camera.tegra
 
 PRODUCT_PACKAGES += \
